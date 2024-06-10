@@ -1,0 +1,38 @@
+@startuml Inventories
+Entity Inventory {
+    -pk id: integer
+    total: integer
+    product_id: integer
+}
+
+Entity ProductPrice {
+    -pk id: integer
+    +fk product_id: integer
+    price: integer
+    cost: integer
+    currency: string
+    method: string
+}
+
+Entity Movement {
+    -pk id: integer
+    type: string
+    equation: string
+}
+
+Entity InventoryMovement {
+    -pk id: integer
+    quantity: integer
+    intentory_id: integer
+    price: float
+    cost: float
+}
+
+Entity InventoryDetail {
+    -pk id: integer
+    quantity: float
+    +fk inventory_id: integer
+    price: float
+    cost: float
+}
+@enduml

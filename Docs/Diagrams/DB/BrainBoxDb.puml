@@ -1,0 +1,35 @@
+@startuml BrainBoxDb
+!include Accounts.puml
+!include Inventories.puml
+!include Orders.puml
+!include Products.puml
+' skinparam linetype polyline
+' skinparam linetype ortho
+
+' Orders relations
+Order ||--|| Client
+OrderItem ||--|| Order
+OrderItem ||--|| Product
+OrderStatus }|--|| Order
+
+' Accounts relations
+Employee ||--|| User
+Employee ||--|| Role
+Client ||--|| User
+
+' Inventories relations
+Inventory }o--|| Product
+Inventory ||--|{ InventoryDetail
+ProductPrice }|--|| Product
+Movement ||--|| InventoryMovement
+Inventory ||--|{ InventoryMovement
+
+' Products relations
+Category ||--o{ Product
+ProductSubcategory }o--|| Subcategory
+ProductSubcategory }o--|| Product
+Brand ||--o| Product
+ProductTag }o--|| Product
+ProductTag }o--|| Tag
+BaseProduct ||--o{ Product
+@enduml

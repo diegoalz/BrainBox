@@ -1,0 +1,32 @@
+@startuml Accounts
+
+Entity User {
+    -pk: integer
+    name: string
+    surname: string
+    last_name: string
+    second_last_name: string
+    phone: string
+    email: string
+}
+
+Entity Role {
+    -pk: integer
+    name: string
+    code: string
+}
+
+Entity Employee {
+    -pk id: integer
+    #fk user_id: integer
+    #fk role_id: integer
+}
+
+Entity Client {
+    -pk id: integer
+    #fk user_id: integer
+    rfc: string
+    curp: string
+}
+
+@enduml

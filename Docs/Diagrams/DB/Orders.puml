@@ -1,0 +1,22 @@
+@startuml Orders
+Entity Order {
+    -pk id: integer
+    #fk client_id: integer
+
+}
+
+Entity OrderItem {
+    -pk id: integer
+    quantity: integer
+    price: integer
+    #fk product_id: integer
+    #fk order_id: integer
+}
+
+' Catalog
+Entity OrderStatus {
+    -pk id: integer
+    status: string
+    current: boolean
+}
+@enduml
