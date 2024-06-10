@@ -17,6 +17,7 @@ public sealed class Product : BaseAutidableModel
         string description,
         string sku,
         Upc barcode,
+        bool active,
         int categoryId,
         DateTime createdDate,
         int createdBy,
@@ -36,6 +37,7 @@ public sealed class Product : BaseAutidableModel
         Description = description;
         Sku = sku;
         Barcode = barcode;
+        Active = active;
         // CategoryId = categoryId;
     }
 
@@ -44,6 +46,6 @@ public sealed class Product : BaseAutidableModel
     public string Sku { get; private set; } = string.Empty;
     public ProductUniqueId UniqueId { get; private set; }
     public Upc Barcode { get; private set; }
-    public bool Active {get; private set; } = true;
+    public bool? Active {get; private set; } = true;
     // public int? CategoryId { get; private set; }
 }
