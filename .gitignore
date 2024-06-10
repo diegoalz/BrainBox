@@ -1,0 +1,170 @@
+# .NET Core
+project.lock.json
+project.fragment.lock.json
+artifacts/
+**/bin/
+**/obj/
+
+# .NET Core SDK
+dotnet.exe
+dotnet/
+shared/
+
+# Visual Studio Code
+.vscode/
+.vscode/settings.json
+.vscode/tasks.json
+.vscode/launch.json
+.vscode/extensions.json
+.vscode/*.code-snippets
+.vscode/jsconfig.json
+.vscode/*-preferences.json
+
+# Visual Studio
+.vs/
+.vscode/
+.vscode-test/
+.vscode-test/**
+
+# Rider
+.idea/
+.idea/*
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries
+.idea/.rider-project-index
+.idea/httpRequests
+.idea/artifacts
+.idea/inspectionProfiles
+.idea/.ideaModules
+.idea/scopes
+.idea/shelf
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+TestResults
+TestResult.xml
+build/
+builds/
+Release/
+bin/
+obj/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# File system metadata
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+.metadata
+
+# Logs
+*.log
+
+# NuGet
+*.nupkg
+# The packages folder can be ignored because of NuGet Package Restore
+**/[Pp]ackages/*
+# except build/, which is used as an MSBuild target.
+!**/[Pp]ackages/build/
+# Uncomment if necessary however generally it will be regenerated when needed
+#**/[Pp]ackages/repositories.config
+
+# NUnit
+*.VisualState.xml
+TestResult.xml
+nunit-*.xml
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]uild[Ll]og.*.xml
+[Bb]uild[Ll]og.*.html
+[Bb]uild[Ll]og.*
+_buildresults/
+[Bb]uild/
+_buildresults/
+_build/
+out/
+build/
+![Bb]uild[Ll]og.*
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# Resharper
+_ReSharper*
+*.ReSharper
+*.DotSettings.user
+*.DotSettings
+_ReSharper.Caches/
+
+# StyleCop
+StyleCopReport.xml
+.stylecop
+
+# TeamCity
+_TeamCity
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# Packages
+packages/
+
+# Others
+!.nuget/
+.DS_Store
+
+# Docs
+exports/
+Docs/StudyCase/
+
+# Configuration files
+appsettings.json
+appsettings.*.json
